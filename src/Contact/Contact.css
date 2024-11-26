@@ -1,0 +1,88 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgb(36, 34, 34);
+    border-radius: 20px;
+}
+
+.contact h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contact p {
+    text-align: center;
+    padding: 0;
+}
+
+.contact .continfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    margin: 10px auto ;
+    padding: 0.5rem;
+}
+
+.contact .continfo .cinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+    flex-direction: row; 
+}
+
+.contact .continfo .cinfo p {
+    font-size: larger;
+}
+
+.contact .continfo .cinfo p a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+@media (max-width: 768px) {
+    .contact {
+        height: auto; 
+        padding: 2rem; 
+    }
+
+    .contact .continfo {
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    .contact .continfo .cinfo {
+        flex-direction: column; 
+        gap: 1rem;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;  
+    }
+
+    .contact p {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h1 {
+        font-size: 1.2rem; 
+    }
+
+    .contact p {
+        font-size: 0.9rem; 
+    }
+
+    .contact .continfo .cinfo p {
+        font-size: medium; 
+    }
+}
